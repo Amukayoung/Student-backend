@@ -1,8 +1,14 @@
 package com.example.demo.student;
 
-import java.time.LocalDate;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+import java.time.LocalDate;
+@Entity
 public class Student {
+    @Id
     private Long id;
     private String name;
     private String email;
